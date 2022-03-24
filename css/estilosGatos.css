@@ -1,0 +1,29 @@
+body{
+  background-color: #B6F0E5;
+}
+
+
+p{
+  font-size: large;
+  text-align: center;
+}
+
+.texto{
+  color:#E0DEE4;
+}
+
+h5{
+  color:#E0DEE4;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+
+footer {
+  background-color: #9EBDD9;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
