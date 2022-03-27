@@ -7,19 +7,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="/css/stylePerros.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title>Adopcion de perritos</title>
 </head>
 <body class="body">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">AnlimaRes</a>
+          <a class="navbar-brand" href="index.html">
+            <i class="bi bi-heart"></i>
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/gatos.html">Gatos</a>
@@ -38,12 +41,13 @@
 
     <div class="container">
         <div class="row" style="justify-content:center;">
-
+            <!----------------------------        FALTA AGREGAR LOS BOTONES DE QUIERO ADOPTAR            --------------------------------->
+            <!----------------------------        FALTA AGREGAR LA PAGINA DE ADOPCION PARA EL USUARIO    --------------------------------->
             <div class="col-md-3 mx-auto col-sm-6">
-                <input class="btn imagen" type="image" src="/img/volt-image.jpg" alt="Volt"  data-bs-toggle="modal" data-bs-target="#myModal">
+                <input class="btn imagen" type="image" src="/img/volt-image.jpg" alt="Volt"  data-bs-toggle="modal" data-bs-target="#myModal1">
                     <!-- The Modal -->
-                    <div class="modal" id="myModal">
-                        <div class="modal-dialog modal-lg">
+                    <div class="modal" id="myModal1">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content">
                         
                                 <!-- Modal Header -->
@@ -54,7 +58,40 @@
                         
                                 <!-- Modal body -->
                                 <div class="modal-body">
-                                DESCRIPCION VOLT
+                                <img class="imagen-modal" src="/img/volt-image.jpg" alt="Volt">
+                                <p class="descripcionPerro">
+                                    Volt es un perrito muy juguetón, es muy enérgico, tiene un gusto impresionante por saltar,
+                                    y le gusta pararse en dos patas al mismo tiempo que mueve sus patas delanteras, como si bailara,
+                                    es muy cariñoso y le gusta acurrucarse encima de la persona que esté con el.
+                                </p>
+                                </div>
+                        
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger btn-adoptar" data-bs-dismiss="modal">¡Quiero Adoptar!</button>
+                                <button type="button" class="btn btn-danger btn-cerrar" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-3 mx-auto col-sm-6">
+                <input class="btn imagen" type="image" src="/img/oliver-image.jpg" alt="Oliver" data-bs-toggle="modal" data-bs-target="#myModal2">
+                        <!-- The Modal -->
+                    <div class="modal" id="myModal2">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                        
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title h3">Oliver</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                        
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                DESCRIPCION OLIVER
                                 </div>
                         
                                 <!-- Modal footer -->
@@ -67,42 +104,279 @@
                     </div>
             </div>
             <div class="col-md-3 mx-auto col-sm-6">
-                <input class="imagen" type="image" src="/img/oliver-image.jpg" alt="Oliver">
+                <input class="btn imagen" type="image" src="/img/artyom-image.jpg" alt="Artyom" data-bs-toggle="modal" data-bs-target="#myModal3">
+                        <!-- The Modal -->
+                    <div class="modal" id="myModal3">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                        
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title h3">Artyom</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                        
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                DESCRIPCION ARTYOM
+                                </div>
+                        
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
             </div>
             <div class="col-md-3 mx-auto col-sm-6">
-                <input class="imagen" type="image" src="/img/artyom-image.jpg" alt="Artyom">
-            </div>
-            <div class="col-md-3 mx-auto col-sm-6">
-                <input class="imagen" type="image" src="/img/perroPug.jpg" alt="Pug">    
+                <input class="btn imagen" type="image" src="/img/perroPug.jpg" alt="Pug" data-bs-toggle="modal" data-bs-target="#myModal4">
+                        <!-- The Modal -->
+                    <div class="modal" id="myModal4">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                        
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title h3">Pu-G</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                        
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                DESCRIPCION Pu-G
+                                </div>
+                        
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>    
             </div>
 
         </div><!--DIV ROW 1-->
         <div class="row" style="justify-content: center;">
             <div class="col-md-3 mx-auto col-sm-6">
-                <input class="imagen" type="image" src="/img/orejon-perro.jpg" alt="Orejon">
+                <input class="btn imagen" type="image" src="/img/orejon-perro.jpg" alt="Orejon" data-bs-toggle="modal" data-bs-target="#myModal5">
+                        <!-- The Modal -->
+                    <div class="modal" id="myModal5">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                        
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title h3">Orejón</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                        
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                DESCRIPCION OREJON
+                                </div>
+                        
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
             </div>
             <div class="col-md-3 mx-auto col-sm-6">
-                <input class="imagen" type="image" src="/img/pelucon-perro.jpeg" alt="Pelucon">
+                <input class="btn imagen" type="image" src="/img/pelucon-perro.jpeg" alt="Pelucon" data-bs-toggle="modal" data-bs-target="#myModal6">
+                        <!-- The Modal -->
+                    <div class="modal" id="myModal6">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                        
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title h3">Pelucon</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                        
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                DESCRIPCION PELUCON
+                                </div>
+                        
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
             </div>
             <div class="col-md-3 mx-auto col-sm-6">
-                <input class="imagen" type="image" src="/img/pesado-perro.jpeg" alt="Pesado">
+                <input class="btn imagen" type="image" src="/img/pesado-perro.jpeg" alt="Pesado" data-bs-toggle="modal" data-bs-target="#myModal7">
+                        <!-- The Modal -->
+                    <div class="modal" id="myModal7">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                        
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title h3">Pesado</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                        
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                DESCRIPCION PESADO
+                                </div>
+                        
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
             </div>
             <div class="col-md-3 mx-auto col-sm-6">
-                <input class="imagen" type="image" src="/img/shiba-perro.jpg" alt="Shiba">
+                <input class="btn imagen" type="image" src="/img/shiba-perro.jpg" alt="Shiba" data-bs-toggle="modal" data-bs-target="#myModal8">
+                        <!-- The Modal -->
+                    <div class="modal" id="myModal8">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                        
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title h3">Shiba</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                        
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                DESCRIPCION SHIBA
+                                </div>
+                        
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div><!--DIV ROW 2-->
         <div class="row" style="justify-content: center;">
             <div class="col-md-3 mx-auto col-sm-6">
-                <input class="imagen" type="image" src="/img/afroamericano-perro.jpg" alt="AfroPerro">
+                <input class="btn imagen" type="image" src="/img/afroamericano-perro.jpg" alt="AfroPerro" data-bs-toggle="modal" data-bs-target="#myModal9">
+                        <!-- The Modal -->
+                    <div class="modal" id="myModal9">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                        
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title h3">Afroamericano</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                        
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                DESCRIPCION AFROAMERICANO
+                                </div>
+                        
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
             </div>
             <div class="col-md-3 mx-auto col-sm-6">
-                <input class="imagen" type="image" src="/img/white-perro.jpg" alt="White">
+                <input class="btn imagen" type="image" src="/img/white-perro.jpg" alt="White" data-bs-toggle="modal" data-bs-target="#myModal10">
+                        <!-- The Modal -->
+                    <div class="modal" id="myModal10">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                        
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title h3">White</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                        
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                DESCRIPCION WHITE
+                                </div>
+                        
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
             </div>
             <div class="col-md-3 mx-auto col-sm-6">
-                <input class="imagen" type="image" src="/img/arrugado-perro.jpg" alt="Arrugado">
+                <input class="btn imagen" type="image" src="/img/arrugado-perro.jpg" alt="Arrugado" data-bs-toggle="modal" data-bs-target="#myModal11">
+                        <!-- The Modal -->
+                    <div class="modal" id="myModal11">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                        
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title h3">Arrugado</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                        
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                DESCRIPCION ARRUGADO
+                                </div>
+                        
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
             </div>
             <div class="col-md-3 mx-auto col-sm-6">
-                <input class="imagen" type="image" src="/img/vaca-perro.jpg" alt="Vaca">
+                <input class="btn imagen" type="image" src="/img/vaca-perro.jpg" alt="Vaca" data-bs-toggle="modal" data-bs-target="#myModal12">
+                        <!-- The Modal -->
+                    <div class="modal" id="myModal12">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                        
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                <h4 class="modal-title h3">Perro-Vaca</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                        
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                DESCRIPCION PerroVaca
+                                </div>
+                        
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+                        
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div><!--DIV ROW 3-->
     </div><!--DIV CONTAINER PRINCIPAL-->
