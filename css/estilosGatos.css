@@ -2,6 +2,11 @@ body{
   background-color: #B6F0E5;
 }
 
+image{
+  width: 100%;
+  max-width: 300px;
+}
+
 
 p{
   font-size: large;
